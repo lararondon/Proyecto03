@@ -1,0 +1,12 @@
+#mensaje {border:0px;
+          width:290px;}
+
+div{border:1px solid black;
+    width:350px;
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom: 15px;}
+    
+button{padding:3px;}
+    
+input{margin: 5px;}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>FORMULARIO BICICLETAS</h3>
+        Color: <input type="text" name="color" [(ngModel)]="bici_nueva.color"><br>
+        Marca: <input type="text"  name="marca" [(ngModel)]="bici_nueva.marca"><br>
+        Velocidad: <input type="number"  name="velocidad" [(ngModel)]="bici_nueva.velocidad"><br>
+        Piñones <input type="number" name="piñones" [(ngModel)]="bici_nueva.pinones"><br>
+        Platos: <input type="number" name="platos" [(ngModel)]="bici_nueva.platos"><br>
+        <input type="checkbox" name="electrica" [(ngModel)]="bici_nueva.electrica">Eléctrica<br><br>
+        <button (click)="enviar()">Enviar</button><br><br>
+
+        Acelerar:<input type="number" name="acelerar" [(ngModel)]="mas_velocidad">
+        <button (click)="acelerar()">Acelerar</button><br>
+        Frenar: <input type="number" name="frenar" [(ngModel)]="menos_velocidad">
+        <button (click)="frenar()">Frenar</button><br>
+
+        <input id="mensaje" type="text" [value]="mensaje">
+    </div>
+</body>
+</html>
